@@ -25,7 +25,7 @@ io.on('connection', (socket) => {
         const user= userJoin(socket.id, username,room);
         socket.join(user.room);
   
-        socket.emit('message', formatMessage(botName, 'Welcome to the Club!'));
+        socket.emit('message', formatMessage(botName, `Welcome to the ${user.room}!`));
 
         socket.broadcast.to(user.room).emit('message', formatMessage(botName,  `${user.username} has joined the chat`));
 
