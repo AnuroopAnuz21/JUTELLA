@@ -1,34 +1,62 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-6">
-          
-        </div>
-        <div class="col-md-4 mt-3 mb-2">
-            <h3 class="text-orange text-center"><b>Sign Up Today...! </b></h3>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>JUTELLA</title>
+	</head>
+	<body>
+		<div class="join-container">
+			<header class="join-header">
+				<h1><i class="fas fa-smile"></i> JUTELLA</h1>
+			</header>
+			<main class="join-main">
+				<form action="chat.html">
+					<div class="form-control">
+						<label for="username">Username</label>
+						<input
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Enter username..."
+							required
+						/>
+					</div>
+					
 
-            <form action="" class="mt-5 p-5">
-                <h5 class="text-primary mb-3">Create </h5>
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Username" name="name" [(ngModel)]="name">
-                    <label for="floatingInput">Full name</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Username" name="username" [(ngModel)]="username">
-                    <label for="floatingInput">Email address</label>
-                </div>
-                  <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" [(ngModel)]="password">
-                    <label for="floatingPassword">Password</label>
-                  </div>
-                  
-                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button class="btn btn-outline-success me-md-2" type="button" (click)="signup()" >Register</button>
-                  </div>
-
-                  <a routerLink="/" class="text-primary" style="text-decoration: none;">Log In ? </a>
-            </form>
-        </div>
-        <div class="col-md-2">
-        </div>
-    </div>
-</div>
+					<div class="form-control">
+						<label for="room">Clubs</label>
+						<select name="room" id="room">
+							<option value="Sports Club">Sports Club</option>
+							<option value="Arts Club">Arts Club</option>
+							<option value="Nature Club">Nature Club</option>
+							<option value="NSS">NSS</option>
+							<option value="IQAC">IQAC</option>
+						</select>
+					</div>
+					<div class="form-control">
+						<label for="password">password</label>
+						<input
+							type="password"
+							name="password"
+							id="password"
+							placeholder="password"
+							required
+							
+						/>
+					</div>
+					<button type="submit" class="btn">Submit</button>
+					
+				</form>
+			</main>
+		</div>
+	</body>
+</html>
